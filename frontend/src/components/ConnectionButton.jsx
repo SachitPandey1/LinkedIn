@@ -4,7 +4,7 @@ import axios from 'axios'
 import io from "socket.io-client"
 import { userDataContext } from '../context/UserContext'
 import { useNavigate } from 'react-router-dom'
-const socket=io("http://localhost:8000")
+const socket=io("https://linkedin-backend5.onrender.com")
 function ConnectionButton({userId}) {
 let {serverUrl}=useContext(authDataContext)
 let {userData,setUserData}=useContext(userDataContext)
